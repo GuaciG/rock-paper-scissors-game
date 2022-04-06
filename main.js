@@ -143,7 +143,7 @@ function refreshRound() {
 	rock_div.style.display = "inline-block";
 	paper_div.style.display = "inline-block";
 	scissors_div.style.display = "inline-block";
-	machineChoice_img.src = "/images/question-mark.png";
+	machineChoice_img.src = "images/question-mark.png";
 }
 
 // 7.1 After 10 rounds, showModal() is executed.
