@@ -246,7 +246,7 @@ function game(userChoice) {
 	// 7. Each 10 rounds, refreshRound() will refresh game board in 2seconds.
 	let rounds = roundScore;
 	setTimeout(() => {
-		if (rounds < 2) {
+		if (rounds < 10) {
 			refreshRound();
 		} else {
 			// 7.1 After 10 rounds, it shows a modal overlay with 2 optional buttons.
