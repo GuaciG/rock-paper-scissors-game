@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2b63dd;
+	background-image: radial-gradient(#05a09b, #075774);
+	font-family: "Asap", sans-serif;
+	min-height: 100vh;
+}
+
+.board {
+	margin: 0 auto;
+	width: 450px;
+	padding-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.title {
+	color: #000;
+	text-align: left;
+	width: 130px;
+}
+
+.title > h1 {
+	width: 60%;
+}
+
+.score-board {
+	border: 3px solid #000;
+	border-radius: 4px;
+	text-align: center;
+	padding: 15px 20px;
+	width: 300px;
+	height: 100px;
+	color: #fff;
+	position: relative;
+}
+
+.user__score-board {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.comp__score-board {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.draw__board-score {
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.round__board-score {
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.badge,
+.info-badge {
+	color: #fff;
+	font-size: 16px;
+	padding: 2px 10px;
+}
+
+.badge {
+	background-color: #000;
+}
+
+#user-score,
+#computer-score {
+	font-size: 40px;
+}
+
+#user-label,
+#draw-label {
+	border-right: 1px solid #000;
+}
+
+#draw-label,
+#round-label {
+	border-top: 1px solid #000;
+}
+
+.result {
+	font-size: 32px;
+	color: #fff;
+	margin-top: 40px;
+}
+
+.result > p {
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.game-wrapper {
+	text-align: center;
+	margin: 40px auto 20px auto;
+	width: 80%;
+	max-width: 600px;
+	color: #000;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: 60px;
+}
+
+.player {
+	width: 45%;
+}
+
+.machine {
+	width: 45%;
+}
+
+.vs {
+	width: 10%;
+	font-size: 40px;
+}
+
+.choices {
+	margin-top: 20px;
+}
+
+.choice {
+	display: inline-block;
+}
+
+.choice img {
+	width: 90px;
+	height: 90px;
+}
+
+.choice:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.choice-hiden {
+	display: none;
+}
+.choice-showed {
+	display: inline-block;
+	margin: 40px auto;
+}
+
+.machine-choice img {
+	width: 90px;
+	height: 90px;
+	margin: 20px auto;
+}
+
+.rules {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.modal {
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.25s ease-out;
+}
+
+.modal.open {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal > p {
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: "Asap", sans-serif;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -25%);
+	text-align: center;
+}
+
+.play-again,
+.play-later,
+.rules-button {
+	display: inline-block;
+	border: none;
+	font-family: "Asap", sans-serif;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 40px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+.rules-button {
+	font-size: 16px;
+	padding: 8px 36px;
+	background-color: transparent;
+	color: #25272e;
+	border: 2px solid #25272e;
+}
+
+.play-again,
+.play-later {
+	font-size: 26px;
+	padding: 8px 36px;
+	background-color: #fff;
+	color: #25272e;
+	border: 2px solid #25272e;
+	position: absolute;
+}
+
+.play-again {
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+}
+
+.play-later {
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+}
+
+.later-modal {
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.25s ease-out;
+}
+
+.later-modal.show {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.later-modal > p {
+	color: #fff;
+	font-size: 56px;
+	font-weight: bold;
+	font-family: "Asap", sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.rules-game-modal {
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.25s ease-out;
+}
+
+.rules-game-modal.visible {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.rules-close-btn,
+.later-close-btn {
+	color: #fff;
+	font-size: 60px;
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	cursor: pointer;
+	padding: 0 10px;
+}
+
+.rules-game {
+	color: #fff;
+	width: 60%;
+	margin: 0 auto;
+	padding: 40px 15px 0 15px;
+	text-align: left;
+}
+
+.rules-game > h2 {
+	padding: 40px 0 10px 0;
+}
+
+.rules-game-image {
+	margin-top: 50px;
+}
+
+.rules-game-image > img {
+	width: 180px;
+	height: 180px;
+	border-radius: 20px;
+	display: block;
+	margin: 0 auto;
+}
+
+.play-again:hover {
+	background-color: #2c963a;
+}
+
+.play-later:hover {
+	background-color: #c4c2c2;
+}
+
+.rules-button:hover {
+	background-color: #c4c2c2;
+}
+
+@media screen and (max-width: 600px) {
+	.board {
+		width: 90%;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.title {
+		text-align: center;
+		width: 100%;
+		margin: 30px auto 20px auto;
+	}
+
+	.title > h1 {
+		width: 100%;
+	}
+
+	.result {
+		margin-top: 50px;
+	}
+
+	.vs {
+		position: relative;
+		top: 10px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.result {
+		font-size: 28px;
+		margin: 40px 40px 0 40px;
+	}
+
+	.vs {
+		font-size: 20px;
+		position: relative;
+		top: 20px;
+	}
+
+	.rules-game {
+		width: 80%;
+		padding: 20px 15px 0 15px;
+	}
+
+	.rules-game > h2 {
+		padding: 30px 0 10px 0;
+	}
+
+	.rules-game-image {
+		margin-top: 45px;
+	}
+
+	.rules-close-btn {
+		top: 0;
+		right: 5%;
+	}
+
+	.play-again,
+	.play-later {
+		font-size: 20px;
+		padding: 8px 26px;
+	}
+
+	.play-again {
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.play-later {
+		top: 58%;
+		transform: translate(-50%, -58%);
+	}
+}

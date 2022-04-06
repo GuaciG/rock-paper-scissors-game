@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock-Paper-Scissors</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="board">
+			<div class="title">
+				<h1>Rock Paper Scissors</h1>
+			</div>
+			<div class="score-board">
+				<div class="user__score-board">
+					<div id="user-label" class="badge">PLAYER</div>
+					<span id="user-score">0</span>
+				</div>
+				<div class="comp__score-board">
+					<div id="computer-label" class="badge">COMPUTER</div>
+					<span id="computer-score">0</span>
+				</div>
+				<div class="draw__board-score">
+					<p id="draw-label" class="info-badge">
+						Draw: <span id="draw-score">0</span>
+					</p>
+				</div>
+				<div class="round__board-score">
+					<p id="round-label" class="info-badge">
+						Round: <span id="round-score">0</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="result">
+			<p>Make your movement.</p>
+		</div>
+
+		<div class="game-wrapper">
+			<div class="player">
+				<div class="user-icon"><i class="fa-solid fa-user"></i></div>
+				<div class="choices">
+					<div class="choice" id="r">
+						<img src="images/rock.png" alt="rock" />
+					</div>
+					<div class="choice" id="p">
+						<img src="images/paper.png" alt="paper" />
+					</div>
+					<div class="choice" id="s">
+						<img src="images/scissors.png" alt="scissors" />
+					</div>
+				</div>
+			</div>
+			<div class="vs">VS.</div>
+			<div class="machine">
+				<div class="machine-icon"><i class="fa-solid fa-desktop"></i></div>
+				<div class="machine-choice">
+					<img src="images/question-mark.png" alt="question mark" />
+				</div>
+			</div>
+		</div>
+		<div class="modal">
+			<p>And the winner is...</p>
+			<button class="play-again">Play again</button>
+			<button class="play-later">Play later</button>
+			<div class="later-modal">
+				<div class="later-close-btn">&times;</div>
+				<p></p>
+			</div>
+		</div>
+
+		<div class="rules">
+			<button class="rules-button">Rules</button>
+			<div class="rules-game-modal">
+				<div class="rules-close-btn">&times;</div>
+				<div class="rules-game">
+					<h2>How does it work?</h2>
+					<p>
+						&#10112; The game will take place in a round of 10 moves.<br />
+						&#10113; The user will start with their first move followed by the
+						computer.<br />
+						&#10114; In each play there will be a win, a loss or a draw,
+						recorded on the scoreboard.<br />
+						&#10115; After the round of 10 moves, the user will be able to play
+						again restarting the scoreboard, or play later.
+					</p>
+					<h2>What are the rules of RPS?</h2>
+					<p>
+						The outcome of the game is determined by 3 simple rules:<br />
+						&#10004; Rock will beat scissors but will be beaten by paper.<br />
+						&#10004; Paper will beat rock but will be beaten by scissors.<br />
+						&#10004; Scissors will beat paper but will be beaten by rock.
+					</p>
+					<div class="rules-game-image">
+						<img
+							src="images/game-rules.jpg"
+							alt="rock, paper, scissors rules"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
