@@ -5,6 +5,8 @@ The poDeveloped in HTML, CSS and JavaScript. Fully interactive and responsive, a
 
 The purpose of this project was to keep practicing JavaScript. I'll keep working on it from time to time, with the goal of refactoring the code.
 
+**Just click on the project link to play.**
+
 ## How does it work?
 
 - ➀ The game will take place in a round of 10 moves.
@@ -15,9 +17,10 @@ The purpose of this project was to keep practicing JavaScript. I'll keep working
 ## What are the rules?
 
 The outcome of the game is determined by 3 simple rules:
-✔ Rock will beat scissors but will be beaten by paper.
-✔ Paper will beat rock but will be beaten by scissors.
-✔ Scissors will beat paper but will be beaten by rock.
+
+- ✔ Rock will beat scissors but will be beaten by paper.
+- ✔ Paper will beat rock but will be beaten by scissors.
+- ✔ Scissors will beat paper but will be beaten by rock.
 
 **See here views:**
 
