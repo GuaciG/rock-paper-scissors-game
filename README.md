@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors Game.
 
 This is my own version of the very famous Rock-Paper-Scissors game.
-The poDeveloped in HTML, CSS and JavaScript. Fully interactive and responsive, adapting to different devices (desktop, tablet and mobile).
+The project was developed in HTML, CSS and JavaScript. Fully interactive and responsive, adapting to different devices (desktop, tablet and mobile).
 
 The purpose of this project was to keep practicing JavaScript. I'll keep working on it from time to time, with the goal of refactoring the code.
 
