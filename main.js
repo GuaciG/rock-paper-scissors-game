@@ -65,13 +65,13 @@ function getComputerChoice() {
 function showComputerChoice(machineChoice) {
 	//console.log("machine is: " + machineChoice);
 	if (machineChoice === "r") {
-		machineChoice_img.src = "/images/rock.png";
+		machineChoice_img.src = "images/rock.png";
 	}
 	if (machineChoice === "p") {
-		machineChoice_img.src = "/images/paper.png";
+		machineChoice_img.src = "images/paper.png";
 	}
 	if (machineChoice === "s") {
-		machineChoice_img.src = "/images/scissors.png";
+		machineChoice_img.src = "images/scissors.png";
 	}
 }
 
