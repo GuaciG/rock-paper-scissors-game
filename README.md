@@ -19,12 +19,9 @@ The outcome of the game is determined by 3 simple rules:
 ✔ Paper will beat rock but will be beaten by scissors.
 ✔ Scissors will beat paper but will be beaten by rock.
 
-**See here a desktop view:**
+**See here views:**
 
-![Rock-Paper-Scissors Game](https://res.cloudinary.com/drpcjt13x/image/upload/v1649259267/Proyectos/Rock-Paper-Scissors/rock-paper-scissors-desktop_uonmhz.jpg "Rock-Paper-Scissors Game")
-
-**Mobile devices view:**
-![Rock-Paper-Scissors Game](https://res.cloudinary.com/drpcjt13x/image/upload/v1649259267/Proyectos/Rock-Paper-Scissors/rock-paper-scissors-mobile_nor5eq.png "Rock-Paper-Scissors Game")
+![Rock-Paper-Scissors Game](https://res.cloudinary.com/drpcjt13x/image/upload/v1649260885/Proyectos/Rock-Paper-Scissors/rock-paper-scissors_vgp8mq.jpg "Rock-Paper-Scissors Game")
 
 ## Links:
 
