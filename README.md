@@ -15,8 +15,11 @@ The purpose of this project was to keep practicing JavaScript. I'll keep working
 ## What are the rules?
 
 The outcome of the game is determined by 3 simple rules:
+
 ✔ Rock will beat scissors but will be beaten by paper.
+
 ✔ Paper will beat rock but will be beaten by scissors.
+
 ✔ Scissors will beat paper but will be beaten by rock.
 
 **See here views:**
