@@ -110,7 +110,7 @@ body {
 
 .game-wrapper {
 	text-align: center;
-	margin: 40px auto 20px auto;
+	margin: 40px auto 5px auto;
 	width: 80%;
 	max-width: 600px;
 	color: #000;
@@ -336,6 +336,18 @@ body {
 
 .rules-button:hover {
 	background-color: #c4c2c2;
+}
+
+.credits,
+.credits a {
+	color: #25272e;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.credits a:hover {
+	color: #fff;
 }
 
 @media screen and (max-width: 600px) {
